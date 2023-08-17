@@ -10,6 +10,13 @@ namespace EjercicioEntregable
     internal class Sistema
     {
         ArrayList clientes = new ArrayList();
+        public int CantClientes
+        {
+            get
+            {
+                return clientes.Count;
+            }
+        }
         public void AgregarCliente(Cliente c)
         {
             clientes.Add(c);
