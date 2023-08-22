@@ -30,13 +30,12 @@
         {
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
-            this.btnGestion = new System.Windows.Forms.Button();
+            this.btnVerViaje = new System.Windows.Forms.Button();
             this.lbClientes = new System.Windows.Forms.ListBox();
             this.btnViaje = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.labCantClientes = new System.Windows.Forms.Label();
-            this.tbDoc = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -52,7 +51,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(100, 11);
+            this.btnRemove.Location = new System.Drawing.Point(10, 174);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(86, 45);
@@ -61,30 +60,32 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // btnGestion
+            // btnVerViaje
             // 
-            this.btnGestion.Location = new System.Drawing.Point(11, 125);
-            this.btnGestion.Margin = new System.Windows.Forms.Padding(2);
-            this.btnGestion.Name = "btnGestion";
-            this.btnGestion.Size = new System.Drawing.Size(86, 45);
-            this.btnGestion.TabIndex = 2;
-            this.btnGestion.Text = "Gestionar Clientes";
-            this.btnGestion.UseVisualStyleBackColor = true;
-            this.btnGestion.Click += new System.EventHandler(this.btnGestion_Click);
+            this.btnVerViaje.Location = new System.Drawing.Point(10, 223);
+            this.btnVerViaje.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerViaje.Name = "btnVerViaje";
+            this.btnVerViaje.Size = new System.Drawing.Size(86, 45);
+            this.btnVerViaje.TabIndex = 2;
+            this.btnVerViaje.Text = "Ver viajes";
+            this.btnVerViaje.UseVisualStyleBackColor = true;
+            this.btnVerViaje.Click += new System.EventHandler(this.btnVerViaje_Click);
             // 
             // lbClientes
             // 
+            this.lbClientes.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbClientes.FormattingEnabled = true;
-            this.lbClientes.Location = new System.Drawing.Point(100, 66);
+            this.lbClientes.ItemHeight = 15;
+            this.lbClientes.Location = new System.Drawing.Point(101, 10);
             this.lbClientes.Margin = new System.Windows.Forms.Padding(2);
             this.lbClientes.Name = "lbClientes";
-            this.lbClientes.Size = new System.Drawing.Size(266, 329);
+            this.lbClientes.Size = new System.Drawing.Size(649, 319);
             this.lbClientes.TabIndex = 3;
             this.lbClientes.SelectedIndexChanged += new System.EventHandler(this.lbClientes_SelectedIndexChanged);
             // 
             // btnViaje
             // 
-            this.btnViaje.Location = new System.Drawing.Point(11, 174);
+            this.btnViaje.Location = new System.Drawing.Point(11, 125);
             this.btnViaje.Margin = new System.Windows.Forms.Padding(2);
             this.btnViaje.Name = "btnViaje";
             this.btnViaje.Size = new System.Drawing.Size(86, 45);
@@ -111,34 +112,27 @@
             this.labCantClientes.TabIndex = 6;
             this.labCantClientes.Text = " ";
             // 
-            // tbDoc
+            // btnUpdate
             // 
-            this.tbDoc.Location = new System.Drawing.Point(195, 32);
-            this.tbDoc.Name = "tbDoc";
-            this.tbDoc.Size = new System.Drawing.Size(100, 20);
-            this.tbDoc.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(192, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "DNI:";
+            this.btnUpdate.Location = new System.Drawing.Point(10, 273);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(87, 42);
+            this.btnUpdate.TabIndex = 7;
+            this.btnUpdate.Text = "Actualizar Lista";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 406);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.tbDoc);
+            this.ClientSize = new System.Drawing.Size(761, 340);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.labCantClientes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnViaje);
             this.Controls.Add(this.lbClientes);
-            this.Controls.Add(this.btnGestion);
+            this.Controls.Add(this.btnVerViaje);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -153,13 +147,12 @@
 
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.Button btnGestion;
+        private System.Windows.Forms.Button btnVerViaje;
         private System.Windows.Forms.ListBox lbClientes;
         private System.Windows.Forms.Button btnViaje;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labCantClientes;
-        private System.Windows.Forms.TextBox tbDoc;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 

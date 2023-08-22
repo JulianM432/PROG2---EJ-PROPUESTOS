@@ -42,5 +42,15 @@ namespace EjercicioEntregable
             }
             return pos;
         }
+        public Cliente VerCliente(int i)
+        {
+            bool seEncontro = i >= 0 && i < CantClientes;
+            Cliente ret = null;
+            if(seEncontro)
+            {
+                ret = (Cliente)clientes[i];
+            }
+            return ret;
+        }
     }
 }
