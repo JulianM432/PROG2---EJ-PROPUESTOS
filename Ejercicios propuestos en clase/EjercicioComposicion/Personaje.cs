@@ -11,7 +11,7 @@ namespace EjercicioComposicion
         public string Nombre { get; private set; }
         public int Ataque { get; private set; }
         public int Defensa { get; private set; }
-        public int Vida { get; private set; } = 100;
+        public int Vida { get; private set; } = 200;
         public Personaje(string nombre, int ataque, int defensa)
         {
             Nombre = nombre;
