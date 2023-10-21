@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParcialesProg2", "ParcialesProg2\ParcialesProg2.csproj", "{F1B5FABF-1ED8-4787-8E59-FBF7F649D109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaParcial2", "PracticaParcial2\PracticaParcial2.csproj", "{819E7A85-9BEA-4E6D-A41D-AE86C1C878AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1B5FABF-1ED8-4787-8E59-FBF7F649D109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B5FABF-1ED8-4787-8E59-FBF7F649D109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B5FABF-1ED8-4787-8E59-FBF7F649D109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B5FABF-1ED8-4787-8E59-FBF7F649D109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{819E7A85-9BEA-4E6D-A41D-AE86C1C878AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{819E7A85-9BEA-4E6D-A41D-AE86C1C878AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{819E7A85-9BEA-4E6D-A41D-AE86C1C878AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{819E7A85-9BEA-4E6D-A41D-AE86C1C878AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {552E5FAD-E08F-4D18-925E-271FBE4FBDA6}
+	EndGlobalSection
+EndGlobal
