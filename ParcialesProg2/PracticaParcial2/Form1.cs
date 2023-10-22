@@ -27,29 +27,17 @@ namespace PracticaParcial2
         {
             try
             {
-                if (string.IsNullOrEmpty(tbCuil.Text) || string.IsNullOrEmpty(tbNro.Text))
-                {
-                    throw new Exception("Campos vacios");
-                }
-                if (tbCuil.Text.Length != 11)
-                {
-                    throw new Exception("El cuil debe tener 11 digitos");
-                }
-                if (tbNro.Text.Length != 16)
-                {
-                    throw new Exception("El numero de tarjeta debe tener 16 digitos");
-                }
-                Cliente unCliente = new Cliente(tbNombre.Text, Convert.ToInt64(tbCuil.Text), Convert.ToInt32(tbTelefono.Text), Convert.ToInt64(tbNro.Text));
+                Cliente unCliente = new Cliente(tbNombre.Text, tbCuil.Text, Convert.ToInt32(tbTelefono.Text), tbNro.Text);
                 double precioBase = Convert.ToDouble(tbPrecio.Text);
-                if (comboBoxTransporte.SelectedText == "Bus")
+                if (comboBoxTransporte.SelectedItem.ToString() == "Bus")
                 {
-                    Bus unBus = new Bus(comboBoxDestino.SelectedText, precioBase, "ABC", 3);
+                    Bus unBus = new Bus(comboBoxDestino.SelectedItem.ToString(), precioBase, "ABC", 3);
                     miSistema.AgregarTransporte(unBus);
                     miSistema.AgregarTicket(new Ticket(unBus, unCliente));
                 }
                 else
                 {
-                    Avion unAvion = new Avion(comboBoxDestino.SelectedText, precioBase, 213);
+                    Avion unAvion = new Avion(comboBoxDestino.SelectedItem.ToString(), precioBase, 213);
                     miSistema.AgregarTransporte(unAvion);
                     miSistema.AgregarTicket(new Ticket(unAvion, unCliente));
                 }
@@ -57,7 +45,6 @@ namespace PracticaParcial2
                 tbTelefono.Clear();
                 tbNro.Clear();
                 tbNombre.Clear();
-                MessageBox.Show(miSistema.VerTransporte(0).Destino);
             }
             catch (Exception ex)
             {
@@ -78,7 +65,11 @@ namespace PracticaParcial2
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            Cliente unCliente = new Cliente("Julian", "23432928489", 34345340,"1234567890123456");
+            double precioBase = 1000;
+                Bus unBus = new Bus("Mar del plata", precioBase, "ABC", 3);
+                miSistema.AgregarTransporte(unBus);
+                miSistema.AgregarTicket(new Ticket(unBus, unCliente));
         }
     }
 }
