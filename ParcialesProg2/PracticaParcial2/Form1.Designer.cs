@@ -48,6 +48,7 @@
             this.comboBoxDestino = new System.Windows.Forms.ComboBox();
             this.comboBoxTransporte = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.openFD = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,6 +181,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Ejemplo";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -254,6 +256,8 @@
             this.Controls.Add(this.tbPrecio);
             this.Name = "Form1";
             this.Text = "Venta de pasajes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing_1);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -282,6 +286,7 @@
         private System.Windows.Forms.ComboBox comboBoxDestino;
         private System.Windows.Forms.ComboBox comboBoxTransporte;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.OpenFileDialog openFD;
     }
 }
 

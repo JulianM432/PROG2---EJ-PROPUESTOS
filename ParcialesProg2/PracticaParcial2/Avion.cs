@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace PracticaParcial2
 {
+    [Serializable]
     internal class Avion : Transporte
     {
-        public int Patente {  get; private set; }
-        public Avion(string destino, double precio, int patente) : base(destino, precio)
+        public string Patente {  get; private set; }
+        public Avion(string destino, double precio, string patente) : base(destino, precio)
         {
             Precio *= 1.30;
             Patente = patente;

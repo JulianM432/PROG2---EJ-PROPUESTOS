@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParcial2
 {
+    [Serializable]
     internal class Sistema
     {
         private List<Transporte> transportes;

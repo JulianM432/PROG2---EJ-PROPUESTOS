@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParcial2
 {
+    [Serializable]
     abstract class Transporte : IComparable
     {
         public double Precio { get; protected set; }

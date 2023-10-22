@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParcial2
 {
+    [Serializable]
     internal class Cliente
     {
         public string Nombre { get; private set; }

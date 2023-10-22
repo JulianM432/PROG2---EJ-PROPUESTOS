@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParcial2
 {
+    [Serializable]
     internal class Ticket
     {
         public double PrecioFinal {  get; private set; }
