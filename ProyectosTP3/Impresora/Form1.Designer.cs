@@ -28,25 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.btnImprimir = new System.Windows.Forms.Button();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.SuspendLayout();
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.Document = this.printDocument1;
-            this.printDialog1.UseEXDialog = true;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.BeginPrint += new System.Drawing.Printing.PrintEventHandler(this.printDocument1_BeginPrint);
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // btnImprimir
             // 
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImprimir.Location = new System.Drawing.Point(126, 15);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(117, 61);
@@ -54,16 +41,6 @@
             this.btnImprimir.Text = "IMPRIMIR";
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
             // 
             // Form1
             // 
@@ -78,11 +55,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PrintDialog printDialog1;
-        private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.Button btnImprimir;
-        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }
 
