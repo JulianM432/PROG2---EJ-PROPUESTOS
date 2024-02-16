@@ -18,15 +18,11 @@ namespace Impresora
     public partial class Form1 : Form
     {
         private PrintDocument printDocument;
-        private PrintDialog printDialog;
-        private PrintPreviewDialog printPreviewDialog;
         public Form1()
         {
             InitializeComponent();
             printDocument = new PrintDocument();
-            printDialog = new PrintDialog();
             //printPreviewDialog = new PrintPreviewDialog();
-
             // Asigna el evento PrintPage al PrintDocument
             printDocument.PrintPage += printDocument1_PrintPage;
         }
@@ -36,10 +32,7 @@ namespace Impresora
             {
                 // Asigna la configuración de impresión al PrintDocument
                 printDocument.PrinterSettings = printDialog.PrinterSettings;
-
-                printDocument.PrinterSettings.Copies = printDialog.PrinterSettings.Copies; // Asigna las copias EN TEORIA
-
-                // Imprime el documento
+                //Imprime
                 printDocument.Print();
             }
         }
@@ -110,7 +103,7 @@ namespace Impresora
         }
         private void printDocument1_BeginPrint(object sender, System.Drawing.Printing.PrintEventArgs e)
         {
-            
+
         }
     }
 }

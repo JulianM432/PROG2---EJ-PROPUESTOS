@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnImprimir = new System.Windows.Forms.Button();
+            this.printDialog = new System.Windows.Forms.PrintDialog();
             this.SuspendLayout();
             // 
             // btnImprimir
@@ -41,6 +42,10 @@
             this.btnImprimir.Text = "IMPRIMIR";
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // printDialog
+            // 
+            this.printDialog.UseEXDialog = true;
             // 
             // Form1
             // 
@@ -56,6 +61,7 @@
 
         #endregion
         private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.PrintDialog printDialog;
     }
 }
 
